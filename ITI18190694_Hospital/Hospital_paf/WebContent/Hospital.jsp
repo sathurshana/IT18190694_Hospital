@@ -44,7 +44,7 @@
     </div>
     
      <div>
-   <input type="hidden" id="hidItemIDSave" name="hidItemIDSave" value="">
+   <input type="hidden" id="hidhostIDSave" name="hidhostIDSave" value="">
    </div>
    
   </form>
@@ -55,6 +55,13 @@
   %>
 </div>
 
+<div id="alertError" class="alert alert-danger"></div>>
+
+<br>
+<%
+Item itemObj = new Item();
+out.print(itemObj.readItems());
+%>
 
 </body>
 </html>
